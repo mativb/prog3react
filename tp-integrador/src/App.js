@@ -1,13 +1,17 @@
 import Footer from './components/Footer/Footer'
+import { Switch, Route} from "react-router-dom"
 import Navbar from './components/Navbar/Navbar'
-import Home from './Home';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
     
     <Navbar />
-    <Home/>
+    <Switch>
+      <Route path = "/" exact component ={Home}/>
+      
+    </Switch>
     <Footer />
     </>
   );

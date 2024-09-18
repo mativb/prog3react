@@ -28,7 +28,7 @@ return(
     <section className="top-data">
     {this.state.pelis.length > 0 ? (
         this.state.pelis.slice(0,5).map((peli,index)=> (
-            <Pelicula peli = {peli.original_title} key = {index} imagen = {peli.poster_path} descripcion = {peli.overview}/>
+            <Pelicula peli = {peli.original_title} key = {index} imagen = {peli.poster_path} descripcion = {peli.overview} id={peli.id}/>
         ))
     ) : (<p> Loading...</p>)}    
     </section>

@@ -26,7 +26,9 @@ class Pelicula extends Component {
                 <h2>{this.props.peli}</h2>
                 <button onClick ={()=> this.handleShowExtra()}>{this.state.mostrardescrip ? "Ver menos" : "Ver más"}</button>
                 <p className={this.state.mostrardescrip ? "show": "hide"}  >{this.props.descripcion}</p>
-                
+
+                <Link to={`/detalle/id/${this.props.id}`}>Ver detalle</Link>
+        
               
 
                

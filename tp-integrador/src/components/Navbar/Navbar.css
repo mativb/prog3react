@@ -23,10 +23,12 @@ nav ul {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+   
 }
 
 .main-nav li:first-child {
     font-weight: bold;
+    
 }
 
 .user img {
@@ -52,3 +54,4 @@ main {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+

@@ -23,11 +23,11 @@ class Pelicula extends Component {
         return (
             <div className="cajaPelicula">
                 <img src={`https://image.tmdb.org/t/p/w400${this.props.imagen}`} alt={this.props.peli} />
-                <h2>{this.props.peli}</h2>
+                <h2 className="titulopeli">{this.props.peli}</h2>
                 <button onClick ={()=> this.handleShowExtra()}>{this.state.mostrardescrip ? "Ver menos" : "Ver más"}</button>
                 <p className={this.state.mostrardescrip ? "show": "hide"}  >{this.props.descripcion}</p>
 
-                <Link to={`/detalle/id/${this.props.id}`}>Ver detalle</Link>
+                <Link to={`/detalle/id/${this.props.id}`} className= "verdetalle">Ver detalle</Link>
         
               
 

@@ -1,9 +1,9 @@
 import Footer from './components/Footer/Footer'
 import { Switch, Route} from "react-router-dom"
-import Navbar from './components/Navbar/Navbar'
+import Header from './components/Header/Header'
 import Home from './pages/Home';
 import detallePelicula from './pages/detallePelicula';
-import mejorRating from './pages/MejorRating';
+import mejorRating from './pages/mejorRating';
 import NotFound from "./pages/NotFound";
 import SearchForm from './components/SearchForm/SearchForm';
 import Proximamente from './pages/Proximamente';
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     
-    <Navbar />
+    <Header />
     <SearchForm />
     <Switch>
       <Route path = "/" exact component ={Home}/>

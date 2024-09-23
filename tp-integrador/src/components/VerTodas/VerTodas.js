@@ -33,8 +33,8 @@ class VerTodas extends Component {
     const { pelis, pelisAMostrar } = this.state;
 
     return (
-      <section className="ver-todas-section">
-        <div className="ver-todas-list">
+      <section className="verTodasCaja">
+        <div className="verTodasLista">
           {pelis.slice(0, pelisAMostrar).map((peli, index) => (
             <Pelicula
               peli={peli.original_title}
@@ -47,7 +47,7 @@ class VerTodas extends Component {
         </div>
 
         {pelisAMostrar < pelis.length && (
-          <button className="button-vermas" onClick={() => this.mostrarMas()}>
+          <button className="botVerMas" onClick={() => this.mostrarMas()}>
             Ver más
           </button>
         )}

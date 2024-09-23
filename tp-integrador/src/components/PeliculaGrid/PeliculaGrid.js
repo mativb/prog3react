@@ -25,9 +25,9 @@ class PeliculaGrid extends Component {
 
   render(props) {
     return (
-      <section className="pelicula-grid">
+      <section className="peliculaGrid">
         {this.state.pelis.length > 0 ? (
-          <div className="pelicula-list">
+          <div className="peliculaLista">
             {this.state.pelis.slice(0, 4).map((peli, index) => (
               <Pelicula
                 peli={peli.original_title}
@@ -35,7 +35,7 @@ class PeliculaGrid extends Component {
                 imagen={peli.poster_path}
                 descripcion={peli.overview}
                 id={peli.id}
-                className="pelicula-item"
+                className="peliculaBox"
               />
             ))}
           </div>
@@ -43,7 +43,7 @@ class PeliculaGrid extends Component {
           <p className="loading">Loading...</p>
         )}
 
-        <Link className="ver-todas" to={this.props.link}>
+        <Link className="verTodas" to={this.props.link}>
           <h3>Ver todas</h3>
         </Link>
       </section>

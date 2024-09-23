@@ -1,13 +1,45 @@
-.top-data {
+.pelicula-grid {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pelicula-list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    color: #918d8d;
-    
-}
+    flex-wrap: wrap;
+     margin-bottom: 20px;
+  }
+  
+  .pelicula-item {
+    background-color: gol;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+  }
 
-.vertodas{
-    display: block;
-    
-}
+  
+  .loading {
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .ver-todas {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .ver-todas h3 {
+    color: #007bff;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+  
+ 
+  

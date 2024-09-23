@@ -1,4 +1,4 @@
-import '../App.css'
+import '../App.css'; // Asegúrate de incluir el CSS correspondiente
 
 const NotFound = () => {
   return (
@@ -13,3 +13,4 @@ const NotFound = () => {
 };
 
 export default NotFound;
+

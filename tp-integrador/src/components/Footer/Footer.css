@@ -1,13 +1,26 @@
 .footer {
-    
-    height: 30%;
-}
-
-.nombres {
-    
-    font-size: 20px;
-    
+    background-color: #000000;
     color: white;
-    background-color: black;
-}
-
+    text-align: center;
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nombres {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  .nombres::after {
+    content: '|';
+    padding: 0 10px;
+  }
+  

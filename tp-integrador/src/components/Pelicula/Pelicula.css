@@ -1,42 +1,64 @@
-.cajaPelicula{
-    background-color: rgb(5, 5, 5);
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 0px;
-    width: 18%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-}
+.caja-pelicula {
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    margin-bottom: 20px;
+  }
+  
 
-.cajaPelicula h4{
-    margin: 10px 0;
-}
-
-.cajaPelicula img{
-    max-width: 150px;
-}
-
-.hide{
-display: none;
-}
-
-.show{
+  .pelicula-imagen {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .titulo-peli {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .boton-ver-mas {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .show {
     display: block;
-}
-
-
-.verdetalle{
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .ver-detalle {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 5%;
-   
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
 
-}
+  .boton-favorito {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
 
-.titulopeli{
-    color: rgb(255, 255, 255);
-    
-}
+  }
+  

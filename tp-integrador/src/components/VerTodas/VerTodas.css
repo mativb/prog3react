@@ -1,0 +1,13 @@
+.top-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #918d8d;
+    
+}
+
+.vertodas{
+    display: block;
+    
+}

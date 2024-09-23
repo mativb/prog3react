@@ -1,11 +1,11 @@
 import { options } from "../../options"
 import {Component} from "react";
 import Pelicula from "../Pelicula/Pelicula";
-import "./PeliculaGrid.css"
-import { Link } from "react-router-dom";
+import "./VerTodas.css"
 
 
-class PeliculaGrid extends Component{
+
+class VerTodas extends Component{
 constructor(props){
     super(props)
     this.state={
@@ -31,12 +31,10 @@ return(
     <section className="top-data">
     {this.state.pelis.length > 0 ? (
         this.state.pelis.slice(0,5).map((peli,index)=> (
-            <Pelicula peli = {peli.original_title} key = {index} imagen = {peli.poster_path} descripcion = {peli.overview} id={peli.id}/> 
+            <Pelicula peli = {peli.original_title} key = {index} imagen = {peli.poster_path} descripcion = {peli.overview} id={peli.id}/>
         ))
     ) : (<p> Loading...</p>)}   
-   
-    <Link className ="vertodas" to= {this.props.link}><h3>Ver todas</h3> </Link>
-  
+ 
     
     </section>
     
@@ -45,6 +43,4 @@ return(
 
 }
 
-
-
-export default PeliculaGrid
+export default VerTodas

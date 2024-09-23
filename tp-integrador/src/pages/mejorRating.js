@@ -1,14 +1,14 @@
 import React from 'react'
-import PeliculaGrid from '../components/PeliculaGrid/PeliculaGrid' 
+import VerTodas from '../components/VerTodas/VerTodas' 
 
-const mejorRating = () => {
+const MejorRating = () => {
   return (
     <div>
         <h1> Todas las películas con mejor rating
-            <PeliculaGrid url= "/rating"/>
+            <VerTodas url= "/rating" api= { "https://api.themoviedb.org/3/movie/top_rated"}/>
         </h1>
     </div>
   )
 }
 
-export default mejorRating
+export default MejorRating

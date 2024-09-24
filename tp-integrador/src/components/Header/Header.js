@@ -1,7 +1,7 @@
-import "./Navbar.css"
+import "./Header.css"
 import { Link } from "react-router-dom"
 
-const Navbar = () => {
+const Header = () => {
   return (
     <nav className="nav">
       <div className="logo-container">
@@ -10,9 +10,12 @@ const Navbar = () => {
       <ul className="main-nav">
         <li className="links"><Link to="/">Home</Link></li>
         <li className="links"><Link to="/favoritos">Favoritos</Link></li>
+        <li className="links"><Link to="/rating">Rating</Link></li>
+        <li className="links"><Link to="/proximamente">Proximamente</Link></li>
+        
       </ul>
     </nav>
   )
 }
 
-export default Navbar;
+export default Header;

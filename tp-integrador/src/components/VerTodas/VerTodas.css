@@ -1,4 +1,4 @@
-.ver-todas-section {
+.verTodasCaja {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -7,15 +7,15 @@
     text-align: center;
   }
   
-  .ver-todas-list {
+  .verTodasLista {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
   }
   
-  .button-vermas {
-    background-color: #007bff;
+  .botVerMas {
+    background-color: black;
     color: white;
     border: none;
     border-radius: 5px;

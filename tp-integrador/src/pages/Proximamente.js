@@ -4,8 +4,8 @@ import VerTodas from '../components/VerTodas/VerTodas'
 const Proximamente = () => {
   return (
     <div>
-        <h1 className="home-title"> Proximamente
-            <VerTodas url= "/poximamente" api= { "https://api.themoviedb.org/3/movie/upcoming"}/>
+        <h1 className="tituloHome"> Proximamente
+            <VerTodas url= "/proximamente" api= { "https://api.themoviedb.org/3/movie/upcoming"}/>
         </h1>
     </div>
   )

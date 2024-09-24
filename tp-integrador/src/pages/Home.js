@@ -3,13 +3,17 @@ import "../App.css";
 
 const Home = (props) => {
   return (
-    <div className="home-container">
-      <h1 className="home-title">Películas con mejor rating</h1>
+    <>
+    
+    <div className="home">
+    <img src='./bannerci.jpg' alt=" banner"className="banner"/>
+      <h1 className="tituloHome">Películas con mejor rating</h1>
       <PeliculaGrid api={"https://api.themoviedb.org/3/movie/top_rated"} link={"/rating"} />
 
-      <h1 className="home-title">Próximamente</h1>
+      <h1 className="tituloHome">Próximamente</h1>
       <PeliculaGrid api={"https://api.themoviedb.org/3/movie/upcoming"} link={"/proximamente"} />
     </div>
+    </>
   );
 }
 

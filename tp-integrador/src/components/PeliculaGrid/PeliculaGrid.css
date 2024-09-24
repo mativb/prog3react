@@ -1,21 +1,20 @@
-.pelicula-grid {
+.peliculaGrid {
     padding: 20px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 8px;
     text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+   
   }
   
-  .pelicula-list {
+  .peliculaLista {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
      margin-bottom: 20px;
   }
   
-  .pelicula-item {
-    background-color: gol;
+  .peliculaBox {
+    
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -28,14 +27,14 @@
     color: #000000;
   }
   
-  .ver-todas {
+  .verTodas {
     text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
+    display: block;
+    
   }
   
-  .ver-todas h3 {
-    color: #007bff;
+  .verTodas h3 {
+    color: black;
     font-size: 20px;
     font-weight: bold;
 

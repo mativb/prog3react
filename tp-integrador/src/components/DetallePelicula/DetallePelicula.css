@@ -1,0 +1,34 @@
+.detalle-pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.detalle-pelicula img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.detalle-pelicula h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.detalle-pelicula p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+    color: #555;
+}
+
+.detalle-pelicula .generos {
+    font-size: 1.1em;
+    color: #34495e;
+    margin: 10px 0;
+
+}

@@ -2,7 +2,6 @@ import Footer from './components/Footer/Footer'
 import { Switch, Route} from "react-router-dom"
 import Header from './components/Header/Header'
 import Home from './pages/Home';
-import detallePelicula from './pages/detallePelicula';
 import mejorRating from './pages/mejorRating';
 import DetallePelicula from './components/DetallePelicula/DetallePelicula.js';
 import NotFound from "./pages/NotFound";

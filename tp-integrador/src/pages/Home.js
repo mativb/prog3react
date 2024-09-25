@@ -10,7 +10,7 @@ const Home = (props) => {
       <h1 className="tituloHome">Películas con mejor rating</h1>
       <PeliculaGrid api={"https://api.themoviedb.org/3/movie/top_rated"} link={"/rating"} />
 
-      <h1 className="tituloHome">Próximamente</h1>
+      <h1 className="titulo_home">Próximamente</h1>
       <PeliculaGrid api={"https://api.themoviedb.org/3/movie/upcoming"} link={"/proximamente"} />
     </div>
     </>

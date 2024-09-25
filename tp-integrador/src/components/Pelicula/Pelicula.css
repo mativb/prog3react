@@ -9,7 +9,7 @@
   }
   
 
-  .imagenPeli {
+  .imagen_peli {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -22,7 +22,7 @@
     margin-bottom: 10px;
   }
   
-  .botonVerMas {
+  .boton_ver_mas {
     background-color: gray;
     color: white;
     border: none;
@@ -45,7 +45,7 @@
     display: none;
   }
   
-  .verDetalle {
+  .ver_detalle {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -53,7 +53,7 @@
     margin-bottom: 10px;
   }
 
-  .botonFavorito {
+  .boton_favorito {
     background-color: red;
     color: white;
     border: none;

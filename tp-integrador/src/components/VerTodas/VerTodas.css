@@ -1,4 +1,4 @@
-.verTodasCaja {
+.vertodas_caja {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -7,14 +7,14 @@
     text-align: center;
   }
   
-  .verTodasLista {
+  .vertodas_lista {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
   }
   
-  .botVerMas {
+  .bot_ver_mas {
     background-color: black;
     color: white;
     border: none;

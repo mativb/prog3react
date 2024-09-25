@@ -61,20 +61,20 @@ class Pelicula extends Component {
   render() {
     return (
       <div className="caja-pelicula">
-        <img src={`https://image.tmdb.org/t/p/w400${this.props.imagen}`} alt={this.props.peli} className="imagenPeli" />
+        <img src={`https://image.tmdb.org/t/p/w400${this.props.imagen}`} alt={this.props.peli} className="imagen_peli" />
         <h2 className="titulo">{this.props.peli}</h2>
-        <button onClick={() => this.handleShowExtra()} className="botonVerMas">
+        <button onClick={() => this.handleShowExtra()} className="boton_ver_mas">
           {this.state.mostrardescrip ? "Ver menos" : "Ver más"}
         </button>
         <p className={this.state.mostrardescrip ? "descripcion show" : "descripcion hide"}>
           {this.props.descripcion}
         </p>
 
-        <Link to={`/detalle/id/${this.props.id}`} className="verDetalle">Ver detalle</Link>
+        <Link to={`/detalle/id/${this.props.id}`} className="ver_detalle">Ver detalle</Link>
 
         <button onClick={() => {
           this.state.esFavorito ? this.sacarFavorito() : this.agregarFavorito();
-        }} className="botonFavorito">
+        }} className="boton_favorito">
           {!this.state.esFavorito ? "Agregar a favoritos" : "Quitar de favoritos"}
         </button>
       </div>

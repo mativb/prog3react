@@ -2,8 +2,8 @@ import Footer from './components/Footer/Footer'
 import { Switch, Route} from "react-router-dom"
 import Header from './components/Header/Header'
 import Home from './pages/Home';
-import mejorRating from './pages/mejorRating';
-import DetallePelicula from './components/DetallePelicula/DetallePelicula.js';
+import MejorRating from './pages/MejorRating';
+import DetallePelicula from './components/DetallePelicula/DetallePelicula';
 import NotFound from "./pages/NotFound";
 import SearchForm from './components/SearchForm/SearchForm';
 import Proximamente from './pages/Proximamente';
@@ -17,7 +17,7 @@ function App() {
     <Switch>
       <Route path = "/" exact component ={Home}/>
       <Route path="/detalle/id/:IDpelicula" exact component={DetallePelicula} />
-      <Route path ="/rating" exact component = {mejorRating}/>
+      <Route path ="/rating" exact component = {MejorRating}/>
       <Route path ="/favoritos" exact component = {Favoritos}/>
       <Route path ="/proximamente" exact component = {Proximamente}/>
       <Route component={NotFound} />

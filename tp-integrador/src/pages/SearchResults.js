@@ -1,6 +1,7 @@
 import React from 'react'
+import { Component } from 'react'
 
-export default class SearchResults extends Component{
+class SearchResults extends Component{
     constructor (props){
         super(props)
     }
@@ -11,3 +12,5 @@ export default class SearchResults extends Component{
         }
 
 }
+
+export default SearchResults

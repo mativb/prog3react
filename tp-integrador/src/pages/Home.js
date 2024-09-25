@@ -1,10 +1,10 @@
 import PeliculaGrid from "../components/PeliculaGrid/PeliculaGrid";
 import "../App.css"; 
-
+import SearchForm from "../components/SearchForm/SearchForm";
 const Home = (props) => {
   return (
     <>
-    
+    <SearchForm />
     <div className="home">
     <img src='./bannerci.jpg' alt=" banner"className="banner"/>
       <h1 className="tituloHome">Películas con mejor rating</h1>

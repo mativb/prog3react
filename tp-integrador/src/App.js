@@ -13,7 +13,7 @@ function App() {
     <>
     
     <Header />
-    <SearchForm />
+    
     <Switch>
       <Route path = "/" exact component ={Home}/>
       <Route path="/detalle/id/:IDpelicula" exact component={DetallePelicula} />

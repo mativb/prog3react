@@ -57,8 +57,8 @@ class VerTodas extends Component {
 
     return (
       <section className="vertodas_caja">
-        <input type="text" onChange={(event) => this.handleFilterChange(event)} value={this.state.filtradoValue} />
-        <button onClick={() => this.handleResetFilter()}>Resetear búsqueda</button>
+        <input className= "input_buscador" type="text" onChange={(event) => this.handleFilterChange(event)} value={this.state.filtradoValue} />
+        <button className= "bot_reset"onClick={() => this.handleResetFilter()}>Resetear búsqueda</button>
         <div className="vertodas_lista">
           {filtradoPelis.slice(0, pelisAMostrar).map((peli, index) => (
             <Pelicula

@@ -1,16 +1,55 @@
-import React from 'react'
-import { Component } from 'react'
+import React from 'react';
+import { Component } from 'react';
+import Pelicula from '../components/Pelicula/Pelicula';
+import { options } from '../options';
 
-class SearchResults extends Component{
-    constructor (props){
-        super(props)
+export class SearchResults extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            pelis: []
+        };
     }
-    render() {
-        return (
-            <div>SearchResults {this.props.location.state.query}</div>
-          )
-        }
 
+    componentDidMount() {
+        const {query} = this.props.location.state;
+
+        if (query) {
+
+            fetch(`https://api.themoviedb.org/3/search/movie?query=${query}`, options)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    this.setState({ pelis: data.results });
+                });
+        }
+    }
+
+    render() { 
+        const { pelis } = this.state;
+
+
+        return (
+            <section className="pelicula_grid">
+            {this.state.pelis.length > 0 ? (
+              <div className="pelicula_lista">
+                {pelis.slice(0, 4).map((peli, index) => (
+                  <Pelicula
+                    peli={peli.original_title}
+                    key={index}
+                    imagen={peli.poster_path}
+                    descripcion={peli.overview}
+                    id={peli.id}
+                    className="pelicula_box"
+                  />
+                ))}
+              </div>
+            ) : (
+              <p className="loading">Loading...</p>
+            )}
+            </section>
+        );
+    }
 }
 
-export default SearchResults
+export default SearchResults;

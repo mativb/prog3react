@@ -1,44 +1,44 @@
 .vertodas_caja {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .vertodas_lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .bot_ver_mas {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  }
+.vertodas_lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
-  .bot_reset{
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-bottom: 15px
+.bot_ver_mas {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
 
-  }
+}
 
-  .input_buscador{
-    color: white;
-    background-color: black;
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 10px 20px;
+.bot_reset{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 15px
 
-  }
+}
+
+.input_buscador{
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
+
+}

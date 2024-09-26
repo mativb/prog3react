@@ -45,7 +45,10 @@ export class SearchResults extends Component {
                 ))}
               </div>
             ) : (
-              <p className="loading">Loading...</p>
+                <div>
+                <p className="loading">No hay resultados para tu busqueda</p>
+                <img src='./pizzagif.webp' alt="Loading" />
+                </div>
             )}
             </section>
         );

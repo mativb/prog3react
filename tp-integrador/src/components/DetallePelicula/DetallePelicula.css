@@ -32,3 +32,8 @@
     margin: 10px 0;
 
 }
+.detalle-pelicula .boton_favorito {
+    margin-top: 20px; /* Espaciado entre el botón y otros elementos */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white; }

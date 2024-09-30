@@ -5,10 +5,10 @@ import Home from './pages/Home';
 import MejorRating from './pages/MejorRating';
 import DetallePelicula from './components/DetallePelicula/DetallePelicula';
 import NotFound from "./pages/NotFound";
-
 import Proximamente from './pages/Proximamente';
 import Favoritos from './pages/Favoritos';
 import SearchResults from './pages/SearchResults';
+
 function App() {
   return (
     <>
@@ -22,6 +22,7 @@ function App() {
       <Route path ="/favoritos" exact component = {Favoritos}/>
       <Route path ="/proximamente" exact component = {Proximamente}/>
       <Route path ="/search" exact component = {SearchResults}/>
+
       <Route component={NotFound} />
     </Switch>
     <Footer />

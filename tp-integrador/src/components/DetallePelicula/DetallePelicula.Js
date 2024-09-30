@@ -20,7 +20,7 @@ class DetallePelicula extends Component {
                 this.chequearFavorito(info.id);
             })
             .catch(err => {
-                console.error('Error fetching movie details:', err);
+                console.error(err);
             });
     }
     chequearFavorito(id) {

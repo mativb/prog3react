@@ -33,7 +33,7 @@ export class SearchResults extends Component {
             <section className="pelicula_grid">
             {this.state.pelis.length > 0 ? (
               <div className="pelicula_lista">
-                {pelis.slice(0, 4).map((peli, index) => (
+                {pelis.slice(0, 5).map((peli, index) => (
                   <Pelicula
                     peli={peli.original_title}
                     key={index}

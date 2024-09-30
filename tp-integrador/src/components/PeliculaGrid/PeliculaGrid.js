@@ -24,6 +24,13 @@ class PeliculaGrid extends Component {
   }
 
   render(props) {
+
+    const pelis = this.state.pelis
+
+    if (!pelis) {
+      return <img src='./pizzagif.webp' alt="Loading" />
+    }
+
     return (
       <section className="pelicula_grid">
         {this.state.pelis.length > 0 ? (

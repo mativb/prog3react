@@ -4,16 +4,16 @@ class Favoritos extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            movies: [],     
-            isLoading: true   
+            movies: [],
+            isLoading: true
         };
     }
 
     componentDidMount() {
         this.setState({
-            isLoading: true  
+            isLoading: true
         });
-        const storage = localStorage.getItem('favoritos');  
+        const storage = localStorage.getItem('favoritos');
         if (storage !== null) {
             const parsedArray = JSON.parse(storage);
             Promise.all(
@@ -22,20 +22,20 @@ class Favoritos extends Component {
                         .then(response => response.json())
                 })
             )
-            .then((movies) => {
-                const validMovies = movies.filter(movie => movie && movie.poster_path && movie.title && movie.id);
+                .then((movies) => {
+                    const validMovies = movies.filter(movie => movie && movie.poster_path && movie.title && movie.id);
 
-                this.setState({
-                    movies: validMovies,
-                    isLoading: false   
+                    this.setState({
+                        movies: validMovies,
+                        isLoading: false
+                    });
+                })
+                .catch(error => {
+                    console.error('Error buscando peliculas:', error);
+                    this.setState({
+                        isLoading: false
+                    });
                 });
-            })
-            .catch(error => {
-                console.error('Error buscando peliculas:', error);
-                this.setState({
-                    isLoading: false  
-                });
-            });
         } else {
             this.setState({
                 isLoading: false
@@ -50,33 +50,40 @@ class Favoritos extends Component {
         localStorage.setItem('favoritos', stringArray)
         this.setState({
             esFavorito: false,
-            movies: this.state.movies.filter(movie=>movie.id !== id)
+            movies: this.state.movies.filter(movie => movie.id !== id)
         })
     }
     render() {
+
+        const movies = this.state.movies
+
+        if (!movies) {
+            return <img src='./pizzagif.webp' alt="Loading" />
+        }
+        
         return (
             <div>
                 {!this.state.isLoading ? (
                     <>
-                        {}
+                        { }
                         <div className="favoritos-grid">
-                        <h2 className="titulofav">Grilla de tus películas favoritas:</h2>
+                            <h2 className="titulofav">Grilla de tus películas favoritas:</h2>
 
                             {this.state.movies.length > 0 ? (this.state.movies.map((movie) => (
                                 <div key={movie.id} className="movie-item">
                                     <h3>{movie.title}</h3>
                                     <img src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} alt={movie.title} />
                                     <button onClick={() => this.sacarFavorito(movie.id)} className='eliminar-bot'>
-                                            Eliminar de favoritos
-                                        </button>
-                                        <Link to= { `/detalle/id/${movie.id}`} className='detallefav-link'>Ver detalle</Link>
+                                        Eliminar de favoritos
+                                    </button>
+                                    <Link to={`/detalle/id/${movie.id}`} className='detallefav-link'>Ver detalle</Link>
                                 </div>
                             ))
-                        ) : (
-                            <p className='aviso-nopeli'>No tienes películas favoritas seleccionadas.</p>
-                        )}
-                            
-                            
+                            ) : (
+                                <p className='aviso-nopeli'>No tienes películas favoritas seleccionadas.</p>
+                            )}
+
+
                         </div>
                     </>
                 ) : (

@@ -69,6 +69,10 @@ class DetallePelicula extends Component {
         const { pelicula, esFavorito } = this.state;
         const { poster_path, title, vote_average, release_date, runtime, overview, genres } = pelicula;
 
+        if (!pelicula) {
+            return <img src='./pizzagif.webp' alt="Loading" /> 
+        }
+
         return (
             <div className='detalle-pelicula'>
                 {poster_path && (
